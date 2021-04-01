@@ -15,10 +15,11 @@
     margin-right: 30px;
 }
 .login-container > form img {
+    height: 80px;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    margin-bottom: 50px;
 }
 
 .img {

@@ -2,14 +2,16 @@ import React from "react"
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import Login from "./assets/Pages/Login"
-import Book from "./assets/Pages/Book"
+import Books from "./assets/Pages/Books"
+import NewBook from './assets/Pages/NewBook'
 
 export default function Routes(){
     return(
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Login}/>
-                <Route path="/Book" component={Book}/>
+                <Route path="/Books" component={Books}/>
+                <Route path="/book/New/:bookId" component={NewBook}/>
             </Switch>
         </BrowserRouter>
     )
